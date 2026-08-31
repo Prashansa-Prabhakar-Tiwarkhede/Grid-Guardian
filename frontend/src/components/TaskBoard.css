@@ -1,0 +1,105 @@
+.task-board {
+  background: var(--panel);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-board__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-board__columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.task-column {
+  background: var(--panel-alt);
+  border: 1px solid var(--border-soft);
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-column__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+  padding: 0 2px;
+}
+.task-column__title .mono { color: var(--text-dimmer); font-size: 10px; }
+
+.task-column__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-column__empty {
+  color: var(--text-dimmer);
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.task-card {
+  background: var(--bg);
+  border: 1px solid var(--border-soft);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.task-card__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid;
+}
+.chip-robot { color: var(--cyan); border-color: var(--cyan); background: var(--cyan-dim); }
+.chip-technician { color: var(--amber); border-color: var(--amber); background: var(--amber-dim); }
+.chip-priority-low, .chip-priority-medium { color: var(--text-dim); border-color: var(--border); }
+.chip-priority-high, .chip-priority-critical { color: var(--red); border-color: var(--red); background: var(--red-dim); }
+
+.task-card__title {
+  font-size: 12.5px;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.task-card__asset {
+  font-size: 10.5px;
+  color: var(--text-dimmer);
+}
+
+.task-card__advance {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--cyan);
+  font-size: 11px;
+  padding: 2px 0;
+}

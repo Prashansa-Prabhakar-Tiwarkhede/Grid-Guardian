@@ -1,0 +1,91 @@
+.topology-map {
+  background: var(--panel);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topology-map__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+}
+
+.topology-map__legend {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-dim);
+}
+
+.topology-map__legend i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 3px;
+}
+.topology-map__legend i:first-child { margin-left: 0; }
+
+.topology-map__svg {
+  width: 100%;
+  flex: 1;
+  min-height: 180px;
+}
+
+.topology-node {
+  cursor: pointer;
+}
+
+.topology-pulse {
+  animation: topo-pulse 1.8s ease-out infinite;
+  transform-origin: center;
+}
+
+@keyframes topo-pulse {
+  0% { r: 7; opacity: 0.9; }
+  100% { r: 16; opacity: 0; }
+}
+
+.topology-map__labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.topology-map__tag {
+  background: var(--panel-alt);
+  border: 1px solid var(--border-soft);
+  color: var(--text-dim);
+  font-size: 11px;
+  padding: 5px 9px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.topology-map__tag .mono {
+  font-size: 9px;
+  color: var(--text-dimmer);
+}
+
+.topology-map__tag.is-active {
+  border-color: var(--cyan);
+  color: var(--text);
+}

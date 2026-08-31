@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Grid Guardian
 ### An AI Vigilance & Workforce Safety Copilot for European Energy Networks
 
@@ -111,3 +112,7 @@ Open `http://localhost:5173`.
 ---
 *This is a hackathon/concept-stage (TRL-2) demo: all sensor telemetry is simulated.
 No real grid, SCADA, or robotics hardware is connected.*
+=======
+# Grid-Guardian
+AI-powered grid vigilance &amp; workforce safety copilot — Flask + React + Groq. Simulates sensor telemetry, classifies threats, and routes tasks to robots vs. technicians.
+>>>>>>> ae0e925cc0524e7f64668cb14ec15122e76d6a44
